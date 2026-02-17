@@ -1,0 +1,24 @@
+public class Average {
+  float a;
+  float b;
+  float sum;
+
+  void sum (){
+    sum = a + b;
+  }
+
+  float average (){
+    return sum / 2.0f;
+  }
+}
+
+class Averagedemo {
+  public static void main ( String[] args){
+    Average avg = new Average();
+    avg.a= 2.0f;
+    avg.b= 69.0f;
+    avg.sum();
+    float result = avg.average();
+    System.out.println(result);
+  }
+}
